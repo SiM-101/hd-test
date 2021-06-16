@@ -2,7 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (env) => {
-	const outFolder = env.mode === "development" ? "dist" : "docs";
+	const isDev = env.mode === "development";
+	const outFolder = isDev ? "dist" : "docs";
 	const rootPath = path.resolve(__dirname);
 	const distPath = path.resolve(rootPath, outFolder);
 
@@ -11,7 +12,7 @@ module.exports = (env) => {
 			extensions: [".ts", ".tsx", ".js", ".scss"],
 		},
 		entry: [path.resolve(rootPath, "src", "index.tsx")],
-		devtool: env.mode === "development" ? "source-map" : false,
+		devtool: isDev ? "source-map" : false,
 		mode: env.mode,
 		module: {
 			rules: [
@@ -29,7 +30,7 @@ module.exports = (env) => {
 		},
 		output: {
 			path: distPath,
-			publicPath: "/",
+			publicPath: "./" ,
 			filename: "[name].js",
 		},
 		devServer: {
