@@ -1,7 +1,7 @@
 @import "./variables";
 
 @mixin lg {
-	@media (min-width: 500px) {
+	@media (min-width: 780px) {
 		@content;
 	}
 }

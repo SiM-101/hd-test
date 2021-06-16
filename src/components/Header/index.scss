@@ -1,0 +1,91 @@
+@import "../../style/includes";
+
+$color-height: 350px;
+$curve-height: 50px;
+
+header {
+	overflow-x: hidden;
+	position: relative;
+	min-height: $color-height;
+}
+
+header::before {
+	content: "";
+	background: $color-dark;
+	top: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: $color-height;
+	z-index: -1;
+}
+
+header::after {
+	content: "";
+	background: $bg-color;
+	top: $color-height - $curve-height;
+	position: absolute;
+	border-radius: 50%;
+	left: -100px;
+	right: -100px;
+	height: $curve-height * 2;
+	z-index: -1;
+}
+
+.header {
+	&__card {
+		margin-top: 2em;
+		display: flex;
+		flex-direction: column-reverse;
+		margin-bottom: 3em;
+
+		@include lg {
+			flex-direction: row;
+		}
+	}
+
+	&__description {
+		text-align: center;
+		background: white;
+		border-radius: 0 0 10px 10px;
+		box-sizing: border-box;
+		padding: 0 1.5em 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 3;
+		font-size: 1.1em;
+
+		@include lg {
+			padding: 0 2em 2em;
+			border-radius: 10px 0 0 10px;
+			width: 340px;
+		}
+	}
+
+	&__picture {
+		flex: 1;
+		border-radius: 10px 10px 0 0;
+		position: relative;
+		overflow: hidden;
+
+		@include lg {
+			border-radius: 0 10px 10px 0;
+		}
+
+		img {
+			z-index: 1;
+			vertical-align: middle;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center center;
+		}
+	}
+}
+
+@include lg {
+	.header__card {
+		flex-direction: row;
+	}
+}
