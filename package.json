@@ -1,0 +1,12 @@
+{
+	"name": "hd-test",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/SiM-101/hd-test.git",
+	"author": "Simone Masiero",
+	"license": "UNLICENSED",
+	"private": true,
+	"devDependencies": {
+		"prettier": "^2.3.1"
+	}
+}
