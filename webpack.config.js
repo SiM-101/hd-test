@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (env) => {
-	const isDev = env.mode === "development";
+	const isDev = env.WEBPACK_SERVE;
 	const outFolder = isDev ? "dist" : "docs";
 	const rootPath = path.resolve(__dirname);
 	const distPath = path.resolve(rootPath, outFolder);
