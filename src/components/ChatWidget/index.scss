@@ -9,8 +9,13 @@
 	z-index: 100;
 	display: flex;
 	align-items: center;
+	transform: translateY(200px);
+	transition: transform 200ms ease;
 
 	img {
 		margin-left: 0.5em;
+	}
+	&--visible {
+		transform: translateY(0);
 	}
 }

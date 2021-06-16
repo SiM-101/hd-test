@@ -8,7 +8,7 @@
 	thead {
 		border-bottom: 2px solid $color-blue;
 		th {
-			padding: 2em 0.8em;
+			padding: 2em 0.6em;
 		}
 		img {
 			width: 50px;
@@ -18,7 +18,6 @@
 		}
 	}
 	tbody {
-		//color: #748caf;
 		tr:nth-child(even) {
 			td {
 				background: white;
