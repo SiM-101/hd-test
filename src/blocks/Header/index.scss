@@ -56,6 +56,11 @@ header::after {
 		z-index: 3;
 		font-size: 1.1em;
 
+		h1 {
+			padding-top: 1em;
+			margin: 0;
+		}
+
 		@include lg {
 			padding: 0 2em 2em;
 			border-radius: 10px 0 0 10px;
