@@ -14,7 +14,7 @@ git clone https://github.com/SiM-101/hd-test.git
 
 My package manager of choice is yarn, but you may use npm if you prefer.
 
-Install the depenencies with
+Install the dependencies with
 
 ```shell
 yarn
