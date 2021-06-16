@@ -1,12 +1,31 @@
 {
 	"name": "hd-test",
 	"version": "1.0.0",
+	"description": "Hastings Direct test",
 	"main": "index.js",
-	"repository": "https://github.com/SiM-101/hd-test.git",
+	"repository": "https://gist.github.com/duiker101/3ced107db6ab33fdf2d97b24d1991078",
 	"author": "Simone Masiero",
 	"license": "UNLICENSED",
 	"private": true,
+	"scripts": {
+		"dev": "webpack serve --mode=development",
+		"build": "rimraf docs && webpack --mode=production"
+	},
 	"devDependencies": {
-		"prettier": "^2.3.1"
+		"@types/react": "^17.0.11",
+		"@types/react-dom": "^17.0.7",
+		"cross-env": "^7.0.3",
+		"html-webpack-plugin": "^5.3.1",
+		"prettier": "^2.3.1",
+		"rimraf": "^3.0.2",
+		"ts-loader": "^9.2.3",
+		"typescript": "^4.3.2",
+		"webpack": "^5.39.0",
+		"webpack-cli": "^4.7.2",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
 	}
 }
