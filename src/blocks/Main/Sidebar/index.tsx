@@ -16,7 +16,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
 				<Link>Terms of use</Link>
 				<Link>Terms & conditions</Link>
 			</Card>
-			<Card className={"card sidebar__award"}>
+			<Card classes={"sidebar__award"}>
 				<h2>Car Insurance Provider of the Year</h2>
 				<img width={100} height={100} alt={"Award"} src={awardImage} />
 				<div>

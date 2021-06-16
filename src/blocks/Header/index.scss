@@ -82,6 +82,17 @@ header::after {
 			object-position: center center;
 		}
 	}
+
+	&__alert {
+		vertical-align: middle;
+		text-align: center;
+		margin: 2em 0;
+		color: white;
+		img {
+			vertical-align: middle;
+			margin-right: 0.5em;
+		}
+	}
 }
 
 @include lg {

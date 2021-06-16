@@ -5,6 +5,9 @@ import logoImage3 from "../../../assets/images/hd-logo-wrapped@3x.png";
 import checkImage from "../../../assets/icons/check_circle.svg";
 
 import "./index.scss";
+import { CTA } from "../../../elements/CTA";
+import { Link } from "../../../elements/Link";
+import { Card } from "../../../components/Card";
 
 interface RowProps {
 	text: string;
@@ -44,34 +47,36 @@ const Content: React.FC<ContentProps> = (props) => {
 				choose buildings only insurance, contents only insurance, combined builds and
 				content cover
 			</p>
-			<table className={"card cover-table"}>
-				<thead>
-					<tr>
-						<th className={"cover-table__title"}>Cover included</th>
-						<th className={"cover-table__logo"}>
-							<img
-								srcSet={`${logoImage}, ${logoImage2} 2x, ${logoImage3} 3x`}
-								alt={"Hastings Direct logo"}
-							/>
-						</th>
-						<th className={"cover-table__logo"}>
-							<img
-								srcSet={`${logoImage}, ${logoImage2} 2x, ${logoImage3} 3x`}
-								alt={"Hastings Direct Premium logo"}
-							/>
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<Row text={"£100,000 alternative accommodation cover"} normal premium />
-					<Row text={"New for old (excluding linens and clothing)"} normal premium />
-					<Row text={"£1,000,000 of buildings insurance"} normal premium />
-					<Row text={"£75,000 of contents insurance"} normal premium />
-					<Row text={"24 hour claims helpline"} normal premium />
-					<Row text={"Family legal expenses cover"} premium />
-					<Row text={"Home emergency cover"} premium />
-				</tbody>
-			</table>
+			<Card noPadding>
+				<table className={"cover-table"}>
+					<thead>
+						<tr>
+							<th className={"cover-table__title"}>Cover included</th>
+							<th className={"cover-table__logo"}>
+								<img
+									srcSet={`${logoImage}, ${logoImage2} 2x, ${logoImage3} 3x`}
+									alt={"Hastings Direct logo"}
+								/>
+							</th>
+							<th className={"cover-table__logo"}>
+								<img
+									srcSet={`${logoImage}, ${logoImage2} 2x, ${logoImage3} 3x`}
+									alt={"Hastings Direct Premium logo"}
+								/>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<Row text={"£100,000 alternative accommodation cover"} normal premium />
+						<Row text={"New for old (excluding linens and clothing)"} normal premium />
+						<Row text={"£1,000,000 of buildings insurance"} normal premium />
+						<Row text={"£75,000 of contents insurance"} normal premium />
+						<Row text={"24 hour claims helpline"} normal premium />
+						<Row text={"Family legal expenses cover"} premium />
+						<Row text={"Home emergency cover"} premium />
+					</tbody>
+				</table>
+			</Card>
 			<p>Limitations may apply to family legal expenses cover and home emergency cover.</p>
 			<p>
 				* Upgraded to £200,000 for Premier policies. Only for building and buildings and
@@ -83,16 +88,12 @@ const Content: React.FC<ContentProps> = (props) => {
 				Scheme.
 			</p>
 			<div className={"content__actions"}>
-				<button className={"cta lg"}>Get a home insurance quote</button>
-				<button className={"cta cta-fill sm"}>Get a home quote</button>
-				<div>
-					<a className={"lg link"} href={"#"}>
-						Retrieve your home insurance quote
-					</a>
-					<a className={"sm link"} href={"#"}>
-						Retrieve your home quote
-					</a>
-				</div>
+				<CTA classes={"lg"}>Get a home insurance quote</CTA>
+				<CTA classes={"sm"} fill>
+					Get a home quote
+				</CTA>
+				<Link classes={"lg"}>Retrieve your home insurance quote</Link>
+				<Link classes={"sm"}>Retrieve your home quote</Link>
 			</div>
 		</section>
 	);

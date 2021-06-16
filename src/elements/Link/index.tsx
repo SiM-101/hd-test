@@ -1,16 +1,17 @@
 import React from "react";
-import classNames from "classnames";
-import "./index.scss"
+import classNames, { Argument as ClassesArgument } from "classnames";
+import "./index.scss";
 
 export interface LinkProps {
 	href?: string;
 	light?: boolean;
 	inline?: boolean;
+	classes?: ClassesArgument;
 }
 
 const Link: React.FC<LinkProps> = (props) => {
-	const { href = "#", light = false, inline = false } = props;
-	const modifiers = classNames({ "link--light": light });
+	const { href = "#", light = false, inline = false, classes = [] } = props;
+	const modifiers = classNames({ "link--light": light }, classes);
 
 	const anchor = (
 		<a className={`link ${modifiers}`} href={href}>

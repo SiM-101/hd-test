@@ -16,6 +16,11 @@
 	}
 
 	&__body {
-		padding: 1em 2em;
+		padding: 2em;
+	}
+	&--no-padding {
+		.card__body {
+			padding: 0;
+		}
 	}
 }

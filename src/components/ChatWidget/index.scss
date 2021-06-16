@@ -1,0 +1,16 @@
+.chat-widget {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	background: #e40134;
+	border-radius: 50px;
+	color: white;
+	padding: 0.8em;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+
+	img {
+		margin-left: 0.5em;
+	}
+}
