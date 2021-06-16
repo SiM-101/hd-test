@@ -18,3 +18,34 @@
 	border-radius: 10px;
 	margin-bottom: 2em;
 }
+
+.cta {
+	background: $color-green;
+	border-radius: 6px;
+	color: $color-light;
+	padding: 1em 3em;
+	border: none;
+	margin: 2em 0;
+	cursor: pointer;
+
+	&--fill {
+		width: 100%;
+	}
+}
+
+.link {
+	text-decoration: none;
+	border-bottom: 2px solid $color-blue;
+
+	&:link,
+	&:visited {
+		color: $color-dark;
+	}
+
+	&--light {
+		&:link,
+		&:visited {
+			color: $color-light;
+		}
+	}
+}
