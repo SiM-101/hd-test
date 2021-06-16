@@ -26,12 +26,17 @@ module.exports = (env) => {
 					exclude: /node_modules/,
 					use: ["style-loader", "css-loader", "sass-loader"],
 				},
+				{
+					test: /\.(png|svg|jpg|jpeg|gif)$/i,
+					type: "asset/resource",
+				},
 			],
 		},
 		output: {
 			path: distPath,
-			publicPath: "./" ,
+			publicPath: "./",
 			filename: "[name].js",
+			assetModuleFilename: "assets/[hash][ext]",
 		},
 		devServer: {
 			contentBase: distPath,

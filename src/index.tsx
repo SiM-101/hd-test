@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss"
+import { Nav } from "./components/Nav";
 
 ReactDOM.render(
-    <div>
-        Hello world
-    </div>,
+    <>
+		<Nav />
+    </>,
     document.getElementById("root")
 );
