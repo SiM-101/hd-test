@@ -8,7 +8,7 @@ module.exports = (env) => {
 
 	return {
 		resolve: {
-			extensions: [".ts", ".tsx", ".js"],
+			extensions: [".ts", ".tsx", ".js", ".scss"],
 		},
 		entry: [path.resolve(rootPath, "src", "index.tsx")],
 		devtool: env.mode === "development" ? "source-map" : false,
@@ -19,6 +19,11 @@ module.exports = (env) => {
 					test: /\.ts(x?)$/,
 					exclude: /node_modules/,
 					use: [{ loader: "ts-loader" }],
+				},
+				{
+					test: /\.scss$/,
+					exclude: /node_modules/,
+					use: ["style-loader", "css-loader", "sass-loader"],
 				},
 			],
 		},
