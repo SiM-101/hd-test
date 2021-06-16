@@ -7,3 +7,7 @@ export default {
 };
 
 export const Navigation = () => <Nav />;
+
+Navigation.parameters = {
+	layout: "fullscreen",
+};

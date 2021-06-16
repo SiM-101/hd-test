@@ -7,3 +7,6 @@ export default {
 };
 
 export const Header = () => <HeaderComponent />;
+Header.parameters = {
+	layout: "fullscreen",
+};

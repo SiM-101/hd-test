@@ -7,6 +7,8 @@ import sofaMobileImage3 from "../../assets/images/mobile/family-on-sofa@3x.png";
 import sofaDesktopImage from "../../assets/images/desktop/family-on-sofa.png";
 import sofaDesktopImage2 from "../../assets/images/desktop/family-on-sofa@2x.png";
 import sofaDesktopImage3 from "../../assets/images/desktop/family-on-sofa@3x.png";
+import { CTA } from "../../elements/CTA";
+import { Link } from "../../elements/Link";
 
 export interface HeaderProps {}
 
@@ -23,12 +25,14 @@ const Header: React.FC<HeaderProps> = (props) => {
 							unexpected expense that theft, loss and damage can bring.
 						</p>
 						<div>
-							<button className={"cta lg"}>Get a home insurance quote</button>
-							<button className={"cta sm"}>Get a home quote</button>
+							{/*<button className={"cta lg"}>Get a home insurance quote</button>*/}
+							{/*<button className={"cta cta--fill sm"}>Get a home quote</button>*/}
+							<CTA>Get a home insurance quote</CTA>
 						</div>
 						<div>
+							<Link>Retrieve your home insurance quote</Link>
 							<a className={"lg link"} href={"#"}>
-								Retrieve your home insurance quote
+
 							</a>
 							<a className={"sm link"} href={"#"}>
 								Retrieve your home quote

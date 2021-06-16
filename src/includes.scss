@@ -5,3 +5,9 @@ $color-blue: #0069cc;
 $color-green: #0e838a;
 
 $bg-color: #f7f7f9;
+
+@mixin lg {
+	@media (min-width: 780px) {
+		@content;
+	}
+}

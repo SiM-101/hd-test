@@ -1,0 +1,16 @@
+@import "src/includes";
+
+.sidebar {
+	@include lg {
+		min-width: 240px;
+		margin-left: 2em;
+	}
+
+	&__award {
+		h2 {
+			margin: 0 0 1em;
+		}
+
+		text-align: center;
+	}
+}
