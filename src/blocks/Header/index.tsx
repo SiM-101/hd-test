@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.scss";
 
-import sofaMobileImage from "../../assets/images/mobile/family-on-sofa.png";
-import sofaMobileImage2 from "../../assets/images/mobile/family-on-sofa@2x.png";
-import sofaMobileImage3 from "../../assets/images/mobile/family-on-sofa@3x.png";
-import sofaDesktopImage from "../../assets/images/desktop/family-on-sofa.png";
-import sofaDesktopImage2 from "../../assets/images/desktop/family-on-sofa@2x.png";
-import sofaDesktopImage3 from "../../assets/images/desktop/family-on-sofa@3x.png";
+import sofaMobileImage from "../../assets/images/mobile/family-on-sofa.jpg";
+import sofaMobileImage2 from "../../assets/images/mobile/family-on-sofa@2x.jpg";
+import sofaMobileImage3 from "../../assets/images/mobile/family-on-sofa@3x.jpg";
+import sofaDesktopImage from "../../assets/images/desktop/family-on-sofa.jpg";
+import sofaDesktopImage2 from "../../assets/images/desktop/family-on-sofa@2x.jpg";
+import sofaDesktopImage3 from "../../assets/images/desktop/family-on-sofa@3x.jpg";
 import infoImage from "../../assets/icons/info.svg";
 import { CTA } from "../../elements/CTA";
 import { Link } from "../../elements/Link";
